@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulario de contacto</title>
+    <style>
+        body{
+            width: 100%;
+            background-color: antiquewhite;
+            padding: 0 0;
+            margin: 0;
+        }
+        header{
+            display: flex;
+            align-items: flex-start;
+            position:fixed;
+            top: 00px;
+            left: 0px;
+            background-color: rgb(145, 216, 216);
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 5px;
+        }
+        header img{
+            height: 100px;
+            width: auto;
+            margin-right: 10px;
+
+        }
+        #nombre{
+            font-size: 40px;
+        }
+        main{
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+        .footer {
+            background-color: #000;
+            padding: 30px 0;
+            font-family: 'Play', sans-serif;
+            text-align: center;
+            color: white;
+            width: 100%;
+            border: 0;
+        }
+
+        .row {
+            width: 100%;
+            margin: 1% 0;
+            padding: 0.6% 0;
+            color: gray;
+            font-size: 0.8em;
+        }
+        #formular{
+            margin: 40px 15%;
+            
+        }
+        #formular label, #formular legend{
+            display: block;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .inputPadron{
+            display: block;
+            font-size: 20px;
+            margin: 0 0 20px;
+            padding: 10px 25px;
+            width: 50%;
+        }
+        .checkbox{
+            margin: 20px 0;
+        }
+        #summit{
+            width: 40%;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #bbbbbb;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: 5s  cubic-bezier(0.075, 0.82, 0.165, 1) all;
+        }
+        #summit:hover{
+            background-color: black;
+            transform: scale(1.02);
+        }
+        #abierto{
+            margin: 40px 50%;
+        }
+        #abierto thead{
+            background-color: #555555;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #abierto td, #abierto th{
+            border: 1px solid black;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <img src="https://pbs.twimg.com/media/GW_UNYyX0AAEygI?format=jpg&name=900x900">
+            <h1 id="nombre">Rodrigo Robledo Solares</h1>
+    </header>
+    <main class="mainc">
+        <form id="formular">
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" id="nombreApellido" class="inputPadron" required>
+
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" class="inputPadron" required placeholder="email@dominio.com">
+
+            <label for="phone">Telefono</label>
+            <input type="tel" id="phone" class="inputPadron" required placeholder="(55) 555-555-55">
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje"class="inputPadron" required></textarea>
+
+            <fieldset id="elexion">  
+
+                <legend>Como le gustaria contactarnos?</legend>
+
+                <label for="radEmail"><input type="radio" name="contacto" id="radEmail" value="Email">Email</label>
+
+                <label for="radtelefono"><input type="radio" name="contacto" id="radtelefono" value="Telefono">Telefono</label>
+                
+                <label for="radWhats"><input type="radio" name="contacto" id="radWhats" value="WhatsApp" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades por e-mail?</label>
+
+            <input type="submit" id="summit">
+        </form>
+
+        <table id="abierto" >
+            <thead>
+                <tr>
+                    <th>Dias habiles</th><th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td><td>8h~20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td><td>8h~20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td><td>8h~20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer class="footer">
+        <div class="row">
+            hi ";;"
+        </div>
+    </footer>
+</body>
+</html>

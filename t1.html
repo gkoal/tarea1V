@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Presentacion</title>
+        <style>
+            body{
+                width: 100%;
+                background-color: antiquewhite;
+            }
+            #heder{
+                display: flex;
+                align-items: flex-start;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            img{
+                height: 100px;
+                width: auto;
+                margin-right: 10px;
+
+            }
+            #nombre{
+                font-size: 40px;
+            }
+            #biografia{
+                position:absolute;
+                top: 150px;
+                left: 35%;
+            }
+            #gustos{
+                background-color: rgb(171, 152, 129);
+                border: solid rgb(105, 94, 80);
+                border-radius: 50px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin: 50px;
+                padding: 12;
+            }
+            th{
+                border-color: black;
+                border: solid;
+                padding: 15px;
+                border-radius: 80px;
+            }
+            .gus{
+                background-color: rgb(171, 168, 129);
+                border: solid 0.1px;
+            }
+            .dis{
+                background-color: rgb(171, 144, 129);
+                border: solid 0.1px;
+            }
+        </style>
+    </head>
+    <body>
+            <div id="heder">
+                <img src="https://pbs.twimg.com/media/GW_UNYyX0AAEygI?format=jpg&name=900x900">
+                <h1 id="nombre">Rodrigo Robledo Solares</h1>
+            </div>
+            <div id="biografia">
+                <ul>
+                    <li><h3>Pequeña biografia:</h3></li>
+                    <li><p>No estoy seguro que colocar aqui; asi que sera una lista de cosas que me agradan y desagran</p>
+                            <table id="gustos">
+                                <tr><th class="gus">Gustos</th><th class="dis">Disgustos</th></tr>
+                                <tr><td class="gus">Computer tinkering</td><td class="dis">UI,UX desing</td></tr>
+                                <tr><td class="gus">Programar (no se hacerlo)</td><td class="dis">trabajos a papel</td></tr>
+                                <tr><td class="gus">Aprender</td><td class="dis">Memorizar</td></tr>
+                                <tr><td class="gus">ranma1/2</td><td class="dis">tatewaky</td></tr>
+                                <tr><td class="gus">Realmente lee esto?</td><td class="dis">De asi ser. Hola :)</td></tr>
+                                <tr><td class="gus">Coraline</td><td class="dis">Economia especulativa</td></tr>
+                            </table>
+                    </li>
+                </ul>
+            </div>
+    </body>
+</html>
