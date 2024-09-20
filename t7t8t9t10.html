@@ -288,6 +288,7 @@
         }
         function juego() {
             let cosa = document.getElementById('game')
+            document.getElementById('container').style.display='none';
             if (cosa.style.display === "none"){
                 cosa.style.display = 'block'
             }else{
@@ -295,6 +296,7 @@
             }
             startmess();
         }
+        // Otras funciones
         function butConsole(){
             let n = prompt("Cual es tu nombre?")
             if(n=="Valdepeña"){
@@ -335,7 +337,7 @@
 <body>
     <header>
             <img src="https://pbs.twimg.com/media/GW_UNYyX0AAEygI?format=jpg&name=900x900">
-            <h1 id="nombre">R. R. S</h1>
+            <h1 id="nombre">Rodrigo Robledo Solares</h1>
     </header>
     <main class="mainc">
         <div id="container">
